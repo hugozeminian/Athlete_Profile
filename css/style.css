@@ -1,3 +1,36 @@
+/*
+************************
+    ### PARAMETERS ###
+************************
+*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+    font-family:'Sport' ;
+    src: url(../fonts/212\ Sports.otf) format('opentype');
+}
+
+:root {
+    --color0: #ebe5c5;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --font-standard: Arial, Verdana, Helvetica, sans-serif;
+    --font-emphasis: 'Courgette', cursive;
+    --font-sport: 'Sport', cursive;
+}
+
+
+/*
+************************
+    ### GENERAL ###
+************************
+*/
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +52,12 @@ html,body{
     padding: 0px 10px;
 }
 
+
+/*
+************************
+    ### HEADER ###
+************************
+*/
 header{
     width: 100%;
     height: auto;
@@ -32,13 +71,10 @@ header nav{
 }
 
 
-
-
-
 /*
-************
-MOBILE MENU
-************
+************************
+   ### MOBILE MENU ###
+************************
 */
 nav.mobile-menu{
     display: none;
@@ -84,14 +120,24 @@ nav.mobile-menu ul li a{
     text-decoration: none;
 }
 
+div.content1-headline1 h2{
+    font-family: var(--font-emphasis);
+    font-size: 3em;
+    font-weight: bold; 
+}
 
+div.content1-headline1 h3{
+    font-family: var(--font-standard);
+    font-size: 2em;
+    font-weight: bold; 
+}
 
 
 
 /*
-*************
-DESKTOP MENU
-*************
+************************
+  ### DESKTOP MENU ###
+************************
 */
 header nav.desktop-menu ul{
     list-style-type: none;
@@ -112,12 +158,10 @@ header nav.desktop-menu li a{
 
 
 
-
-
 /*
-********
-CONTENT
-********
+************************
+    ### CONTENT ###
+************************
 */
 .headline1{
     margin-top: 20px;
@@ -201,12 +245,10 @@ section.section5{
 
 
 
-
-
 /*
-***************
-### TABLES ###
-***************
+************************
+     ### TABLES ###
+************************
 */
 /* General tables */
 .tables {
@@ -257,12 +299,10 @@ section.section5{
 
 
 
-
-
 /*
-*******************
-### CONTACT ME ###
-*******************
+************************
+   ### CONTACT ME ###
+************************
 */
 
 section.section5{
@@ -366,12 +406,10 @@ section.section5{
 
 
 
-
-
 /*
-*****************
-### SIDE BAR ###
-*****************
+************************
+    ### SIDE BAR ###
+************************
 */
 .sidenav {
     width: 100px;
@@ -397,12 +435,10 @@ section.section5{
 
 
 
-
-
 /*
-***************
-### FOOTER ###
-***************
+************************
+     ### FOOTER ###
+************************
 */
 footer div.container {
     padding: 10px;
@@ -421,12 +457,10 @@ footer div.container p{
 
 
 
-
-
 /*
-**********************
-### MEDIA QUERIES ###
-**********************
+************************
+  ### MEDIA QUERIES ###
+************************
 */
 
 @media screen and (max-width:1512px){
@@ -487,8 +521,6 @@ footer div.container p{
     .wrap-content-section1 > div{
         margin: auto auto;
     }
-
-
 
     .form{
         float: none;
