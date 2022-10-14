@@ -262,6 +262,7 @@ main a:hover {
     display: flex;
     justify-content: center;
     background-color: var(--color2);
+    padding: 15px;
 }
 
 .wrap-content-section1 div{
